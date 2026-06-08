@@ -1,0 +1,29 @@
+# Terraform state — chứa thông tin nhạy cảm, không commit
+*.tfstate
+*.tfstate.backup
+*.tfstate.*.backup
+
+# Thư mục Terraform
+.terraform/
+.terraform.lock.hcl
+
+# SSH key — tuyệt đối không commit lên GitHub
+*.pem
+*.key
+
+# Terraform variable files có thể chứa secrets
+*.tfvars
+*.tfvars.json
+
+# Crash log
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Generated files
+terraform_minikube/
